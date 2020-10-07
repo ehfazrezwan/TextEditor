@@ -41,7 +41,7 @@
     <a href="https://github.com/ehfazrezwan/TextEditor"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ehfazrezwan/TextEditor">View Demo</a>
+    <a href="https://texteditor-09cbpwj.web.app/">View Demo</a>
     ·
     <a href="https://github.com/ehfazrezwan/TextEditor/issues">Report Bug</a>
     ·
