@@ -9,14 +9,10 @@
  * Update the output text as a user types in the textarea
  * HINT: Use the onkeydown function inside HTML
  */
-function updateText() {
-  // CODE GOES HERE
-  // var inputField = document.getElementById("text-input");
-  // var outputField = document.getElementById("text-output");
-  document.getElementById("text-output").innerText = document.getElementById(
+const updateText = () =>
+  (document.getElementById("text-output").innerText = document.getElementById(
     "text-input"
-  ).value;
-}
+  ).value);
 
 /**
  * Toggle the bold class for the output text
@@ -25,21 +21,21 @@ function updateText() {
  * HINT: Use the classList property
  * HINT: Toggle .active class for the button
  */
-function makeBold(elem) {
+const makeBold = (elem) => {
   //CODE GOES HERE
   let outputBox = document.getElementById("text-output");
   elem.classList.toggle("active");
   outputBox.classList.toggle("bold");
-}
+};
 
 /**
  * Toggle the italic class for the output text
  */
-function makeItalic(elem) {
+const makeItalic = (elem) => {
   let outputBox = document.getElementById("text-output");
   elem.classList.toggle("active");
   outputBox.classList.toggle("italic");
-}
+};
 
 /**
  * Toggle the underline class for the output text
@@ -47,12 +43,12 @@ function makeItalic(elem) {
  * HINT: Use the classList property
  * HINT: Use contains, remove, and add functions
  */
-function makeUnderline(elem) {
+const makeUnderline = (elem) => {
   //CODE GOES HERE
   let outputBox = document.getElementById("text-output");
   elem.classList.toggle("active");
   outputBox.classList.toggle("underline");
-}
+};
 
 /**
  * Toggle the style textAlign attribute
@@ -60,7 +56,7 @@ function makeUnderline(elem) {
  * HINT: Use the style property of the element
  * HINT: Make sure to untoggle the active state for all other align buttons
  */
-function alignText(elem, alignType) {
+const alignText = (elem, alignType) => {
   // CODE GOES HERE
   let outputBox = document.getElementById("text-output");
   outputBox.style.textAlign = alignType;
@@ -74,4 +70,4 @@ function alignText(elem, alignType) {
       button.classList.remove("active");
     }
   }
-}
+};
